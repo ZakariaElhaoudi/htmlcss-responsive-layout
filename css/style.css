@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
 .container{
     width: 80%;
     margin: 0 auto;
@@ -16,6 +20,7 @@ header{
     z-index: 1000;
     height: 60px;
     width: 100%;
+    background-color: blueviolet;
 }
 
 header .container {
@@ -30,11 +35,12 @@ header .container {
 #menumobile{
     display: none;
 }
-#menudesktop{
+/* #menudesktop{
     width: 50%;
-}
+} */
 
 #menudesktop ul {
+    width: 100%;
     display: flex;
     list-style: none;
     justify-content:;
@@ -43,9 +49,14 @@ header .container {
 
 #menudesktop a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
-    padding: 10px 25px;
+    padding: 10px 20px;
+}
+
+.button{
+    border-radius: 25px 25px;
+    padding: 8px 16px;
 }
 
 
@@ -53,6 +64,8 @@ header .container {
 @media screen and (max-width:768px) {
     #menumobile{
         display:inline;
+        color: white;
+        font-size: 25px;
     }
     #menudesktop{
         display:none;
@@ -82,9 +95,7 @@ footer{
 
 
 /* DEBUG */
-header{
-    background-color: orangered;
-}
+
 
 
 section{
