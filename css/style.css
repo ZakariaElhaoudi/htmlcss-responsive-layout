@@ -14,7 +14,7 @@
 header{
     position: fixed;
     z-index: 1000;
-    height: 100px;
+    height: 60px;
     width: 100%;
 }
 
@@ -23,12 +23,42 @@ header .container {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
 }
 /* nav rules  */
 #menumobile{
     display: none;
 }
+#menudesktop{
+    width: 50%;
+}
 
+#menudesktop ul {
+    display: flex;
+    list-style: none;
+    justify-content:;
+    align-items: center;
+}
+
+#menudesktop a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px 25px;
+}
+
+
+/* resolution header mobile  */
+@media screen and (max-width:768px) {
+    #menumobile{
+        display:inline;
+    }
+    #menudesktop{
+        display:none;
+    }
+    
+}
 
 /* appsection rules  */
 #appsection .col {
@@ -56,11 +86,6 @@ header{
     background-color: orangered;
 }
 
-nav{
-    height: 50px;
-    width: 50px;
-    background-color: blue;
-}
 
 section{
     padding-top: 100px ;
