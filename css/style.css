@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -24,43 +24,42 @@ header{
 }
 
 header .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
 }
+
 /* nav rules  */
 #menumobile{
     display: none;
 }
-/* #menudesktop{
-    width: 50%;
-} */
+
 
 #menudesktop ul {
     width: 100%;
     display: flex;
     list-style: none;
-    justify-content:;
     align-items: center;
 }
 
 #menudesktop a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 18px;
 }
 
 .button{
     border-radius: 25px 25px;
     padding: 8px 16px;
+    font-size: 15px;
 }
 
 
-/* resolution header mobile  */
+/* resolution header mobile tablet */
 @media screen and (max-width:768px) {
     #menumobile{
         display:inline;
@@ -72,12 +71,66 @@ header .container {
     }
     
 }
+/* main general rules  */
+section{
+    padding-top: 100px ;
+    margin-bottom: 20px;
+}
 
 /* appsection rules  */
-#appsection .col {
-    display: flex;
-    
 
+#appsection .row {
+    display: flex;
+    align-items:stretch;
+    gap: 10px;
+}
+
+#appsection .card{
+    background-color: 	#e39ff6;
+    border-radius: 20px 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#appsection .card.imgphone {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+}
+
+#appsection img {
+    max-width: 100%;
+}
+
+.button.purple{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 28px;
+    margin-top: 20px;
+}
+#appsection h3 {
+    color: blueviolet;
+    margin-bottom: 20px;
+}
+#appsection p {
+    font-size: 15px;
+    color: rgb(90, 88, 88);
+}
+
+div > i {
+    font-size: 70px;
+    color: blueviolet;
+    margin-bottom: 20px;
+}
+
+.card.imgphone{
+    width: 63%;
+}
+
+.card.text{
+    width: 30%;
 }
 
 
@@ -98,22 +151,10 @@ footer{
 
 
 
-section{
-    padding-top: 100px ;
-    height: 300px;
-    background-color: cornflowerblue;
-    margin-bottom: 20px;
-}
+
 
 footer{
     height: 200px;
     background-color: #23272a;
 }
 
-.col{
-    background-color: yellowgreen;
-    height: 100px;
-    width: 100%;
-    margin-bottom: 20px;
-    border: black solid 1px;
-}
