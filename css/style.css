@@ -1,0 +1,83 @@
+/* general rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header rules */
+header{
+    position: fixed;
+    z-index: 1000;
+    height: 100px;
+    width: 100%;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* nav rules  */
+#menumobile{
+    display: none;
+}
+
+
+/* appsection rules  */
+#appsection .col {
+    display: flex;
+    
+
+}
+
+
+
+
+
+
+
+/* footer rules   */
+footer{
+    background-color: #23272a;
+}
+
+
+
+
+/* DEBUG */
+header{
+    background-color: orangered;
+}
+
+nav{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+
+section{
+    padding-top: 100px ;
+    height: 300px;
+    background-color: cornflowerblue;
+    margin-bottom: 20px;
+}
+
+footer{
+    height: 200px;
+    background-color: #23272a;
+}
+
+.col{
+    background-color: yellowgreen;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: black solid 1px;
+}
