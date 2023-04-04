@@ -348,17 +348,65 @@ div > i {
 /* rules about us section  */
 .row-about-us{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
-.row-about-us h2 {
+.about-us-text h2 {
     color: #9593e6;
     padding: 20px;
     font-size: 50px;
     margin-bottom: 20px;
 }
 
+.about-us-text p {
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.about-us-profile{
+    line-height: 2;
+    font-size: 30px;
+    color: #9593e6;
+}
+
+.about-us-profile img {  
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+.about-us-profile .col-img{
+    position: relative;
+    
+}
+
+.about-us-profile .icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.button.about-us{
+    font-size: 15px;
+    background-color: #9593e6;
+    color: white;
+}
+
+/* resolution about us section smartphone */
+@media screen and (max-width:480px) {
+   .row-about-us{
+    display: block;
+   }
+   .about-us-profile .icon{
+    position: absolute;
+    top: 0;
+    right: 200px;
+}
+}
 
 
 
