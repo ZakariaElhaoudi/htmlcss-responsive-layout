@@ -220,7 +220,7 @@ div > i {
 }
 
 /* resolution planning section tablet and smartphone */
-@media screen and (max-width:780px) {
+@media screen and (max-width:810px) {
     #planning-sect .row {
     display: block;
     width: 100%;
@@ -233,17 +233,18 @@ div > i {
 /* testimonial-sect rules  */
 .testimonial-title{
     text-align: center;
-    line-height: 2;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .testimonial-title h2 {
     color: #9593e6;
     font-size: 50px;
+    margin-top: 20px;
 }
 
 .testimonial-title p {
-    margin-bottom : 15px;
+    margin-top: 20px;
 }
 
 .testimonial-cards{ 
@@ -276,6 +277,95 @@ div > i {
     text-align: center;
    }
    }
+
+/* section beneficts with us  */
+#withus-sect{
+    background-color: #9593e6;
+    padding-bottom: 20px;
+}
+
+#withus-sect .title{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#withus-sect .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.regularcard{
+    background-color:white;
+    margin-bottom: 20px;
+    border-radius: 20px 20px;
+    padding: 20px 20px;
+    line-height: 2;
+    width: calc(100%/3 - 20px);
+    color: #9593e6;
+}
+
+.regularcard h2 {
+    font-size: 50px;
+}
+
+.regularcard p {
+    color:  rgb(90, 88, 88) ;
+    margin-top: 10px;
+}
+
+.button.with-us{
+    background-color: #9593e6;
+    color: white;
+    font-size: 20px;
+    padding: 8px 32px;
+    margin-top: 10px;
+}
+
+/* resolution beneficts section tablet */
+@media screen and (max-width:810px) {
+    .regularcard {
+    width: calc(100%/2 - 20px);
+
+   }
+}
+
+/* resolution beneficts section smartphone */
+@media screen and (max-width:480px) {
+    #withus-sect .row{
+        display: block;
+    }
+    .regularcard {       
+    width:100%;
+   }
+}
+
+/* rules about us section  */
+.row-about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-about-us h2 {
+    color: #9593e6;
+    padding: 20px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
 
 
 
