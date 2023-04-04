@@ -76,7 +76,7 @@ header .container {
 /* main general rules  */
 section{
     padding-top: 100px ;
-    margin-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 /* appsection rules  */
@@ -381,6 +381,7 @@ div > i {
 
 .about-us-profile .col-img{
     position: relative;
+    width: 200px;
     
 }
 
@@ -404,39 +405,93 @@ div > i {
    .about-us-profile .icon{
     position: absolute;
     top: 0;
-    right: 200px;
+    right: 0;
 }
 }
 
+/* rules call to action  */
+#call-to-actionsect{
+    background-color: #9593e6;
+    text-align: center;
+    padding-bottom: 20px;
+}
 
+#call-to-actionsect .container{
+    width: 40%;
+    margin:0 auto;
+}
 
+.call-to-action h6{
+    color:lightgray;
+    font-size: 20px;
+    margin-top: 20px;
+}
 
+.call-to-action h3{
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+}
 
+.call-to-action h2{
+    color: rgb(167, 225, 49);
+    font-size: 70px;
+    margin-top: 20px;
+}
 
+.call-to-action p {
+    color: white;
+    line-height: 2;
+    margin-bottom: 20px ;
+}
 
+.call-to-action a {
+    color: white;
+}
 
+.button.call-to-action{
+    background-color: white;
+    color: #9593e6;
+    padding: 20px 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
-
-
-
-
+/* resolution about us section smartphone */
+@media screen and (max-width:810px) {
+    #call-to-actionsect .container{
+        width: 100%;
+    }
+}
 
 /* footer rules   */
 footer{
-    background-color: #23272a;
-}
-
-
-
-
-/* DEBUG */
-
-
-
-
-
-footer{
     height: 200px;
     background-color: #23272a;
+    color: gray;
+    font-size: 18px;
 }
+
+footer .container{
+    width: 40%;
+    margin: 0 auto;
+}
+footer p {
+    padding-top: 30px ;
+}
+
+/* resolution about us section smartphone */
+@media screen and (max-width:810px) {
+    footer{
+        height: 200px;
+    }
+    footer .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
+
+
+
 
